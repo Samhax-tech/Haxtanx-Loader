@@ -34,8 +34,8 @@ export const BotConfigPanel: React.FC<BotConfigPanelProps> = ({ session }) => {
   const [tempDelay, setTempDelay] = useState(session.delays?.temp || 5);
 
   // HTR Parameters
-  const [hname, setHname] = useState(session.hname || 'Eren');
-  const [hrtext, setHrtext] = useState(session.hrtext || 'yooo bro');
+  const [hname, setHname] = useState(session.hname || 'EREN');
+  const [hrtext, setHrtext] = useState(session.hrtext || 'RANDI KA BACHA');
 
   const updateFields = async (fields: Partial<BotSession>) => {
     try {
@@ -108,7 +108,7 @@ export const BotConfigPanel: React.FC<BotConfigPanelProps> = ({ session }) => {
       hname: hname.trim(),
       hrtext: hrtext.trim()
     });
-    alert('HTR parameters saved successfully.');
+    alert('HATER saved successfully.');
   };
 
   return (
@@ -222,7 +222,7 @@ export const BotConfigPanel: React.FC<BotConfigPanelProps> = ({ session }) => {
                 onClick={handleSaveDelays}
                 className="w-full mt-2 py-2 px-3 bg-[#25D366] hover:bg-opacity-90 text-xs font-bold text-black rounded-lg transition-all flex items-center justify-center gap-1 cursor-pointer"
               >
-                <Save className="w-3 h-3" /> Save Timers and Apply to Active Bot
+                <Save className="w-3 h-3" /> Save and Apply to Active Bot
               </button>
             </div>
           </div>
@@ -322,7 +322,7 @@ export const BotConfigPanel: React.FC<BotConfigPanelProps> = ({ session }) => {
           <div className="flex gap-2">
             <input
               type="text"
-              placeholder="Enter new speech or message phrase..."
+              placeholder="Enter text or phrase..."
               value={newText}
               onChange={(e) => setNewText(e.target.value)}
               className="flex-1 text-xs bg-[#0A0A0A] border border-[#262626] rounded-lg py-2 px-3 text-slate-200 outline-none focus:border-gray-550"
@@ -348,7 +348,7 @@ export const BotConfigPanel: React.FC<BotConfigPanelProps> = ({ session }) => {
               </div>
             ))}
             {(!session.responseTexts || session.responseTexts.length === 0) && (
-              <p className="text-xs text-slate-600 italic">No custom speech phrases saved. Defaults to "Hello!"</p>
+              <p className="text-xs text-slate-600 italic">No custom text or phrases saved. Defaults to "DADDY HAMZA IS LIVE"</p>
             )}
           </div>
         </div>
@@ -640,7 +640,7 @@ export const BotConfigPanel: React.FC<BotConfigPanelProps> = ({ session }) => {
                 </div>
               ))}
               {(!session.htrTargets || session.htrTargets.length === 0) && (
-                <p className="text-[10px] text-zinc-500 italic">No HTR targets added. Tag them using .add htr from WhatsApp or enter above.</p>
+                <p className="text-[10px] text-zinc-500 italic">No HATER targets added. Tag them using .add htr from WhatsApp or enter above.</p>
               )}
             </div>
           </div>
