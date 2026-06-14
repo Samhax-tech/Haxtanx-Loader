@@ -46,7 +46,8 @@ try {
 }
 
 const app = express();
-app.use(express.json());
+app.use(express.json({ limit: '10mb' }));
+app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 
 const PORT = 3000;
 const server = http.createServer(app);
@@ -419,13 +420,15 @@ app.post('/api/templates/upload', (req, res) => {
     if (!fs.existsSync(parentDir)) {
       fs.mkdirSync(parentDir, { recursive: true });
     }
-    fs.writeFileSync(targetPath, content, 'utf-8');
+    // Normalize line endings before writing
+    const normalizedContent = content.replace(/\r\n/g, '\n').replace(/\r/g, '\n');
+    fs.writeFileSync(targetPath, normalizedContent, 'utf-8');
     res.json({ success: true, message: `${fileName} uploaded successfully.` });
   } catch (err: any) {
+    console.error(`[Templates] Write failed for ${fileName}:`, err);
     res.status(500).json({ error: err.message });
   }
 });
-
 // =======================================================
 
 // Set up WebSocket server handshake to map browser screens
