@@ -101,44 +101,44 @@ const HTR_FILE_PATH = path.join(DATA_DIR, 'htr.txt');
 function ensureDataFiles() {
   if (!fs.existsSync(HATER_FILE_PATH)) {
     fs.writeFileSync(HATER_FILE_PATH, [
-      "YOU STILL THINK CAN CHALLENGE DADDY HAMZA? IMPOSSIBLE!",
-      "REMAIN SILENT IN FRONT OF YOUR DEV DAD PAPA HAMZA!",
-      "YOUR SPEED IS LOWER THAN MY OLD COMPUTER'S INTERNET!",
-      "OH PLEASE, STOP POSTING AND DISSOLVE INTO THE SHADOWS!",
-      "RUNNING AFTER DADDY HAMZA WON'T SAVE YOUR FAILED CAREER!",
-      "LOSE SIGHT AND FEEL THE PRESSURE!",
-      "THE KING DADDY HAMZA ALWAYS DOMINATES THEIR CHATS!"
+      "TERI DIDI JAHIL GAWAR RAND",
+      "DADDY HAMZA TERI DIDI KI CHUT MAI LAUDA MAR K KHOON NIKAL DE",
+      "TERI DIDI KI CHUT MAI HATHI KA LUND",
+      "TERI AMA KHOTHI KI BACHI",
+      "TERI AMA RANDI KI BACHI HAI NA",
+      "TERI MAA KUTTI KI BACHI",
+      "HAMZA NAI TERI MUMMY KI CHUT KAISE PHARI"
     ].join('\n') + '\n', 'utf-8');
   }
   if (!fs.existsSync(LPC_FILE_PATH)) {
     fs.writeFileSync(LPC_FILE_PATH, [
-      "WAKE UP AND RESPOND TO DADDY HAMZA IMMEDIATELY!",
-      "FEEL THE REAL POWER ENGINE FROM HAXTANX LOADER!",
-      "PINGED! YOUR DAD PAPA HAMZA IS CALLING YOU OUT!",
-      "DO NOT REJECT THE ALMIGHTY COMMANDS OF DADDY HAMZA!",
-      "ONLINE NOW AND FEEL THE ULTIMATE PRESENCE!"
+      "LAUDE LE KE APNI DIDI KO DE DE RANDI KE BACHE",
+      "TERI DIDI KO APNA LAUDE FEEL KRWAUN SASTE JAHIL GAWAR K BACHE",
+      "TERI MAA KA RAPE KR DUN GA",
+      "TERI MAA KO KHA JAUN",
+      "TERI AMA KI CHUT KALPA DUN"
     ].join('\n') + '\n', 'utf-8');
   }
   if (!fs.existsSync(MON_FILE_PATH)) {
     fs.writeFileSync(MON_FILE_PATH, [
-      "🛡️ Monitored Activity Detected. Daddy Hamza is keeping an eye on your status.",
-      "⚠️ Alert! This chat is being live-logged by Haxtanx Loader V1.",
-      "🤖 Your action has been synced down to our database triggers securely."
+      "TERI MAA KO GB RANDI BNA K PELUN",
+      "TERI MAA KI CHUT MAI SIREN LAGA K RAPE KRUN.",
+      "TERI MAA KI CHUT MAI TOKOYO DRIFTING KRUN RANDI KE BACHE "
     ].join('\n') + '\n', 'utf-8');
   }
   if (!fs.existsSync(MENT_FILE_PATH)) {
     fs.writeFileSync(MENT_FILE_PATH, [
-      "🛡️ Alert! Please review WhatsApp bot configurations.",
-      "⚠️ Urgent notice: Server execution state is active.",
-      "🤖 Status Ping: Bot triggers are monitoring activity."
+      "TERI MAA RAND",
+      "TERI DIDI GAWAR RAND",
+      "TERI MAA SASTI RANDI KI BACHI"
     ].join('\n') + '\n', 'utf-8');
   }
   if (!fs.existsSync(HTR_FILE_PATH)) {
     fs.writeFileSync(HTR_FILE_PATH, [
-      "is that your best shot? try harder!",
-      "you have absolutely zero speed. get lost!",
-      "shut up and listen to your developer daddy!",
-      "not even worth wasting my words on you."
+      "TERI M44 K1 CHU7 N4MUN3",
+      "T3R1 R4ND1 M44 K1 CHU7 M41 L4UD4 M4RUN N4MUN3 K3 B4CH3",
+      "HAMZA PAPA T3R1 M44 K1 CHU7 PH4RY3 G4",
+      "T3RI D1D1 K3 BOOBS DUB4 K3 LUND M4RUN"
     ].join('\n') + '\n', 'utf-8');
   }
 }
@@ -160,10 +160,10 @@ function readLinesFromFile(filePath: string): string[] {
 
 // Generate stylized random watermarks
 const WATERMARKS = [
-  "⚡ > 𝙁𝙀𝙀𝙇 𝙔𝙊𝙐𝙍 𝘿𝘼𝘿𝘿𝙔 𝙃𝘼𝙈𝙕𝘼",
-  "👑 > 𝙁𝙀𝙀𝙇 𝙔𝙊𝙐𝙍 𝘿𝙀𝙑 𝘿𝘼𝘿 𝙃𝘼𝙈𝙕𝘼",
-  "🛡️ > 𝘿𝙀𝙑 𝘽𝙔 𝙃𝘼𝙈𝙕𝘼 𝙋𝘼𝙋𝘼",
-  "🔥 > 𝙃𝘼𝙓𝙏𝘼𝙉𝙓 𝙇𝙊𝘼𝘿𝙀𝙍 𝙑1 𝘽𝙔 𝘿𝘼𝘿𝘿𝙔 𝙃𝘼𝙈𝙕𝘼"
+  "> 𝙁𝙀𝙀𝙇 𝙔𝙊𝙐𝙍 𝘿𝘼𝘿𝘿𝙔 𝙃𝘼𝙈𝙕𝘼 ⚡",
+  "> 𝙁𝙀𝙀𝙇 𝙔𝙊𝙐𝙍 𝘿𝙀𝙑 𝘿𝘼𝘿 𝙃𝘼𝙈𝙕𝘼 👑",
+  "> 𝘿𝙀𝙑 𝘽𝙔 𝙃𝘼𝙈𝙕𝘼 𝙋𝘼𝙋𝘼 🕷",
+  "> 𝙃𝘼𝙓𝙏𝘼𝙉𝙓 𝙇𝙊𝘼𝘿𝙀𝙍 𝙑1 𝘽𝙔 𝘿𝘼𝘿𝘿𝙔 𝙃𝘼𝙈𝙕𝘼 ⋆༺𓆩☠︎︎𓆪༻⋆"
 ];
 function getRandomWatermark(): string {
   return WATERMARKS[Math.floor(Math.random() * WATERMARKS.length)];
@@ -757,7 +757,7 @@ export class WhatsAppBotInstance {
       const haters = config.haterNames || [];
       if (haters.length === 0) {
         await this.addLog('warn', 'Hax spam: No active hater names registered.');
-        await this.sock.sendMessage(chatJid, { text: '⚠️ [NexusWA Admin] Please register at least one hater first using %addhater <name>' });
+        await this.sock.sendMessage(chatJid, { text: '⚠️ [HAXTANX WA Admin] Please register at least one hater first using %addhater <name>' });
         this.isHaxRunning = false;
         return;
       }
@@ -772,7 +772,7 @@ export class WhatsAppBotInstance {
       const rawText = spamLines[Math.floor(Math.random() * spamLines.length)];
 
       const watermark = getRandomWatermark();
-      const textToSend = `👿 *ᴛᴀʀɢᴇᴛ:* *${activeHater}*\n\n💬 ${rawText}\n\n${watermark}`;
+      const textToSend = `*${activeHater}*\n\n💬 ${rawText}\n\n${watermark}`;
 
       await this.sock.sendMessage(chatJid, { text: textToSend });
       await this.addLog('success', `Hax spam sent targeting ${activeHater}`);
@@ -806,7 +806,7 @@ export class WhatsAppBotInstance {
     try {
       if (this.lpcTargets.length === 0) {
         await this.addLog('warn', 'LPC spam: No targets to mention.');
-        await this.sock.sendMessage(chatJid, { text: '⚠️ [NexusWA Admin] LPC targets list is empty. Mention a user via .lpc @user' });
+        await this.sock.sendMessage(chatJid, { text: '⚠️ [HAXTANX BOT] LPC targets list is empty. Mention a user via .lpc @user' });
         this.isLpcRunning = false;
         return;
       }
@@ -877,7 +877,7 @@ export class WhatsAppBotInstance {
 
     switch (cmd) {
       case 'ping':
-        await reply('🏓 Pong! Dashboard WhatsApp session is active and responsive.');
+        await reply('🏓 Pong! DADDY HAMZA LOADER IS ACTIVE AND RUNING PERFECTLY');
         break;
 
       case 'addbot': {
@@ -925,9 +925,8 @@ export class WhatsAppBotInstance {
           },
           allowedGroups: [],
           responseTexts: [
-            "🛡️ Monitored Activity Detected. Daddy Hamza is keeping an eye on your status.",
-            "⚡ NexusWA Engine v1 running at peak latency response speed.",
-            "⚙️ Systems diagnostics checked. Connection secure."
+            "ISKI MAA KI CHUT KALPAYE GYI BY DADDY HAMZA ",
+            "CHUT PHARYE GA DADDY HAMZA KA LOADER"
           ],
           owners: config.owners || [senderPhone],
           monitors: [],
@@ -982,8 +981,8 @@ export class WhatsAppBotInstance {
         const activePrefix = config.prefix || '%';
         const watermark = getRandomWatermark();
         const helpText = `╔══════════════════════════╗\n` +
-          `   👑  *𝙉𝙀开𝙐𝙎𝙒𝘼 𝙇𝙊𝘼𝘿𝙀𝙍 𝘽𝙊𝙏*  👑   \n` +
-          `      *𝖣𝖤𝖖𝖤𝖫𝖮𝖯𝖤𝖣 𝖡𝖸 𝖣𝖠𝖣𝖣𝖸 𝖧𝖠𝖬𝖹𝖠*       \n` +
+          `   👑  *ℋ𝓐𝓧𝑇𝓐𝓝𝓧 𝙇𝙊𝘼𝘿𝙀𝙍 𝘽𝙊𝙏*  👑   \n` +
+          `      *𝖣𝖤V𝖤𝖫𝖮𝖯𝖤𝖣 𝖡𝖸 𝖣𝖠𝖣𝖣𝖸 𝖧𝖠𝖬𝖹𝖠*       \n` +
           `╚══════════════════════════╝\n\n` +
           `🛡️ *ᴀᴄᴛɪᴠᴇ ᴘʀᴇғɪx:*  \`${activePrefix}\`\n\n` +
           `👥 *⚙️ 𝘾𝙊𝙉𝙏𝙍𝙊𝙇 & 𝙎𝙀𝙏𝙏𝙄𝙉𝙂𝙎:*\n` +
@@ -1038,7 +1037,7 @@ export class WhatsAppBotInstance {
           `◽ \`${activePrefix}join <group-link>\` - Join group via URL\n` +
           `◽ \`${activePrefix}left\` - Exit current group immediately\n` +
           `◽ \`${activePrefix}nuke\` - Groups wipeout\n\n` +
-          `💻 _Cloud Synchronization Panel:_ https://ai.studio/build\n\n` +
+          `💻 _DADDY HAMZA:_ t.me/haxtanx \n\n` +
           `${watermark}`;
         await reply(helpText);
         break;
@@ -1050,7 +1049,7 @@ export class WhatsAppBotInstance {
           return reply('❌ Please specify a valid short prefix character (1-2 chars).');
         }
         await updateDoc(sessionRef, { prefix: newPrefix });
-        await reply(`✅ *Success:* The trigger prefix has been dynamically shifted to '${newPrefix}'!`);
+        await reply(`✅ *Success:* The trigger prefix has been dynamically shifted to '${newPrefix}'`);
         break;
       }
 
@@ -1139,7 +1138,7 @@ export class WhatsAppBotInstance {
         if (!name) return reply('❌ Specify hater nickname or tag.');
         const updated = Array.from(new Set([...(config.haterNames || []), name]));
         await updateDoc(sessionRef, { haterNames: updated });
-        await reply(`✅ Added *${name}* to our targets database.`);
+        await reply(`✅ Added *${name}* to our targets.`);
         break;
       }
 
@@ -1148,7 +1147,7 @@ export class WhatsAppBotInstance {
         if (!name) return reply('❌ Specify hater name.');
         const updated = (config.haterNames || []).filter(h => h !== name);
         await updateDoc(sessionRef, { haterNames: updated });
-        await reply(`✅ Removed *${name}* from blockers target database.`);
+        await reply(`✅ Removed *${name}* from blockers target.`);
         break;
       }
 
@@ -1468,7 +1467,7 @@ export class WhatsAppBotInstance {
             }
           }, intervalMs);
 
-          await reply(`✅ *LEAK FLUIDITY TRIGGERED* - Dispatching images every ${config.delays?.leak || 30}s.`);
+          await reply(`✅ *LEAKED IMAGES STARTED* - Dispatching images every ${config.delays?.leak || 30}s.`);
         } else if (sub === 'stop') {
           this.leakChats.delete(chatJid);
           if (this.leakInterval) {
@@ -1946,12 +1945,12 @@ class WhatsAppSessionManager {
           if (!inst.isConnected && !inst.isConnecting && data.status !== 'Disconnected') {
             console.log(`[Supervisor] Bot node ${data.id} (+${data.phoneNumber}) is offline but marked ${data.status}. Spawining auto-reconnect...`);
             inst.connect().catch((err) => {
-              console.error(`[Supervisor] Auto-reconnect failed for ${data.id}:`, err);
+              console.error(`[DADDY HAX] Auto-reconnect failed for ${data.id}:`, err);
             });
           }
         }
       } catch (err) {
-        console.error('[Supervisor] Keep-alive daemon error:', err);
+        console.error('[DADDY HAX] Keep-alive daemon error:', err);
       }
     }, 120000); // FIX: was 45s — too aggressive, caused reconnect storms on Railway
   }
