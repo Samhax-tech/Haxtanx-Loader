@@ -154,7 +154,7 @@ export async function initDb() {
     const adminExists = await getUser(ADMIN_USERNAME);
     if (!adminExists) {
       console.log(`[DB] Admin account '${ADMIN_USERNAME}' not present. Provisioning...`);
-      await registerUser(ADMIN_USERNAME, 'haxtanx@nexuswa.com', ADMIN_PASSWORD);
+      await registerUser(ADMIN_USERNAME, 'hax@haxtanx.com', ADMIN_PASSWORD);
     }
   } catch (err) {
     console.error('[DB] Admin auto-provisioning exception:', err);
