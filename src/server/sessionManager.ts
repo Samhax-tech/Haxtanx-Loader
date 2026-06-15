@@ -981,7 +981,7 @@ export class WhatsAppBotInstance {
         const activePrefix = config.prefix || '%';
         const watermark = getRandomWatermark();
         const helpText = `╔══════════════════════════╗\n` +
-          `   👑  *ℋ𝓐𝓧𝑇𝓐𝓝𝓧 𝙇𝙊𝘼𝘿𝙀𝙍 𝘽𝙊𝙏*  👑   \n` +
+          `   👑  *𝙃𝘼𝙓𝙏𝘼𝙉𝙓 𝙇𝙊𝘼𝘿𝙀𝙍 𝘽𝙊𝙏*  👑   \n` +
           `      *𝖣𝖤V𝖤𝖫𝖮𝖯𝖤𝖣 𝖡𝖸 𝖣𝖠𝖣𝖣𝖸 𝖧𝖠𝖬𝖹𝖠*       \n` +
           `╚══════════════════════════╝\n\n` +
           `🛡️ *ᴀᴄᴛɪᴠᴇ ᴘʀᴇғɪx:*  \`${activePrefix}\`\n\n` +
@@ -991,7 +991,7 @@ export class WhatsAppBotInstance {
           `◽ \`${activePrefix}pre <char>\` - Change prefix (e.g. \`${activePrefix}pre !\`)\n` +
           `◽ \`${activePrefix}stats\` - View session logs & metrics\n` +
           `◽ \`${activePrefix}set del <type> <seconds>\` - Set latency delay for [ment|hax|lpc|leak|htr|temp]\n\n` +
-          `👑 *👤 𝙊𝙦𝙉𝙀𝙍𝙎𝙃𝙄𝙋:*\n` +
+          `👑 *👤 𝙊𝙒𝙉𝙀𝙍𝙎𝙃𝙄𝙋:*\n` +
           `◽ \`${activePrefix}owners\` - Show registered bot owners\n` +
           `◽ \`${activePrefix}addowner <phone>\` - Add new admin owner\n` +
           `◽ \`${activePrefix}removeowner <phone>\` - Remove owner\n\n` +
@@ -1007,7 +1007,7 @@ export class WhatsAppBotInstance {
           `◽ \`${activePrefix}unblock <phone>\` - Unblock a number\n` +
           `◽ \`${activePrefix}mute\` - Enable reply trackers (tag user)\n` +
           `◽ \`${activePrefix}unmute\` - Deactivate reply tracking\n\n` +
-          `👿 *🔥 𝙃𝘼𝙏𝙀𝙍 𝙎𝙋𝘼𝙈𝙈𝙀规𝙍 (𝙗𝙖𝙘𝙠𝙜𝙧𝙤𝙪𝙣𝙙):*\n` +
+          `👿 *🔥 𝙃𝘼𝙏𝙀𝙍 𝙎𝙋𝘼𝙈 规:*\n` +
           `◽ \`hax start\` / \`${activePrefix}hax start\` - Boot fast hater loops (9s/12s/15s)\n` +
           `◽ \`stop hax\` / \`${activePrefix}hax stop\` - Shutdown hater loops\n` +
           `◽ \`${activePrefix}addhatxt <text>\` - Append line inside hater.txt\n` +
@@ -1021,12 +1021,12 @@ export class WhatsAppBotInstance {
           `◽ \`${activePrefix}rm htr <phone_or_reply>\` - Remove number from HTR auto-reply list\n` +
           `◽ \`${activePrefix}add hname <name>\` - Set hater target response prefix title\n` +
           `◽ \`${activePrefix}add hrtext <text>\` - Append custom response text inside htr.txt\n\n` +
-          `⚔️ *💥 𝙇𝙋𝘾 𝙎𝙋𝘼𝙈𝙈𝙀𝙍 (𝙗𝙖𝙘𝙠𝙜𝙧𝙤𝙪𝙣𝙙):*\n` +
+          `⚔️ *💥 𝙇𝙋𝘾 𝙎𝙋𝘼𝙈:*\n` +
           `◽ \`.lpc @user\` - Initialize pings with tags from lpc.txt\n` +
           `◽ \`stop lpc\` / \`stopall\` - Stop LPC spamming instantly\n` +
           `◽ \`${activePrefix}add lptxt <text>\` - Append line inside lpc.txt\n` +
           `◽ \`${activePrefix}rm lptxt <text>\` - Remove line from lpc.txt\n\n` +
-          `🎯 *🔥 𝙏𝙀𝙈𝙋 𝙎𝙋𝘼𝙈𝙈𝙀𝙍 (𝙗𝙖𝙘𝙠𝙜𝙧𝙤𝙪𝙣𝙙):*\n` +
+          `🎯 *🔥 𝙏𝙀𝙈𝙋 𝙎𝙋𝘼𝙈:*\n` +
           `◽ \`${activePrefix}temp add <text>\` - Register new spam template\n` +
           `◽ \`${activePrefix}temp start\` - Blast registered templates on delay (5s)\n` +
           `◽ \`${activePrefix}temp stop\` - Stop active temp loop in this chat\n` +
