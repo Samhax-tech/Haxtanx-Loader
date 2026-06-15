@@ -44,7 +44,7 @@ export const AuthPanel: React.FC<AuthPanelProps> = () => {
       // Create a guest account on-the-fly
       const guestId = 'guest_' + Math.random().toString(36).substring(2, 7);
       const { error } = await supabase.auth.signUp({
-        username: `Haxtanx Guest`,
+        username: `Haxwa Guest`,
         email: `${guestId}@haxtanx.com`,
         password: `password_guest`
       });
@@ -52,7 +52,7 @@ export const AuthPanel: React.FC<AuthPanelProps> = () => {
         setErrorMsg(error.message);
       }
     } catch (err: any) {
-      console.error('Demo sandbox login failed:', err);
+      console.error('Demo Guest login failed:', err);
       setErrorMsg(err.message || 'Demo bypass failed.');
     } finally {
       setLoading(false);
