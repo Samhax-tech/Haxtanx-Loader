@@ -192,7 +192,7 @@ export const LogTerminal: React.FC<LogTerminalProps> = ({ sessionId, isConnected
         {filteredLogs.length === 0 && (
           <div className="flex flex-col items-center justify-center py-20 text-slate-600 select-none">
             <FileText className="w-8 h-8 mb-2 opacity-30 animate-pulse" />
-            <p className="italic">Terminal idle. Waiting for bot activity trigger...</p>
+            <p className="italic">Loading Terminal idle.... Waiting for bot activity ...</p>
           </div>
         )}
 
