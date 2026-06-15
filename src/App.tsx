@@ -301,7 +301,7 @@ export default function App() {
                   <input
                     type="text"
                     required
-                    placeholder="e.g. Sales Agent, Personal Assistant"
+                    placeholder="e.g. hamza papa , Haxxxx"
                     value={newBotName}
                     onChange={(e) => setNewBotName(e.target.value)}
                     className="w-full text-xs bg-[#0A0A0A] border border-[#262626] rounded-lg py-2.5 px-3 text-slate-200 outline-none focus:border-gray-500"
@@ -352,7 +352,7 @@ export default function App() {
         <div className="flex justify-center items-center gap-1.5 mb-1 text-slate-400 select-none">
           <ShieldCheck className="w-3.5 h-3.5 text-[#25D366]" /> A lightweight Server Loader bot for whatsapp 
         </div>
-        Powered by Daddy Hamza .
+        Powered by Daddy Hamza⚡
       </footer>
 
     </div>
