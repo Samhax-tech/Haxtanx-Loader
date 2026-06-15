@@ -94,35 +94,33 @@ export const TemplateFilesManager: React.FC = () => {
   };
 
   const handleSave = async () => {
-    setIsSaving(true);
-    setSaveStatus('idle');
-    try {
-      const res = await fetch('/api/templates/upload', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          fileName: activeFile,
-          content: editingContent
-        })
-      });
-      const data = await res.json();
-      if (data.success) {
-        setSaveStatus('success');
-        // Update local template memory
-        setTemplates(prev => ({
-          ...prev,
-          [activeFile]: editingContent
-        }));
-      } else {
-        setSaveStatus('error');
-      }
-    } catch {
+  setIsSaving(true);
+  setSaveStatus('idle');
+  try {
+    const res = await fetch('/api/templates/upload', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        fileName: activeFile,
+        content: editingContent
+      })
+    });
+    const data = await res.json();
+    if (data.success) {
+      setSaveStatus('success');
+      setTemplates(prev => ({ ...prev, [activeFile]: editingContent }));
+    } else {
+      // BUG: you never see WHY it failed
+      console.error('Upload failed:', data.error); // ADD THIS
       setSaveStatus('error');
-    } finally {
-      setIsSaving(false);
     }
-  };
-
+  } catch (err: any) {
+    console.error('Upload fetch error:', err); // ADD THIS
+    setSaveStatus('error');
+  } finally {
+    setIsSaving(false);
+  }
+};
   const fileDescriptions: Record<string, string> = {
     'hater.txt': 'Used by the Hater Spamer (hax / %hax start) to generate responses in loops.',
     'lpc.txt': 'Used to loop tag-based flood mentions on targeted users (.lpc command).',
@@ -147,7 +145,7 @@ export const TemplateFilesManager: React.FC = () => {
             <FileText className="w-4 h-4 text-[#25D366]" /> Dynamic Text Templates Core Manager
           </h2>
           <p className="text-[11px] text-zinc-500 mt-1">
-            Overwrites ephemeral filesystem text files dynamically to persist configurations across Railway server boots.
+            Upload txt file for bot. select any of the category and upload file 
           </p>
         </div>
 
@@ -217,7 +215,7 @@ export const TemplateFilesManager: React.FC = () => {
             >
               <Upload className="w-8 h-8 mb-2 animate-bounce" />
               <p className="text-xs font-semibold">Drop your .txt configuration file here</p>
-              <p className="text-[10px] mt-1 text-zinc-500">or click to manually select from computer</p>
+              <p className="text-[10px] mt-1 text-zinc-500">or click to manually select from device</p>
             </div>
           </div>
 
