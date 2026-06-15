@@ -136,8 +136,8 @@ export default function App() {
               <Bot className="w-4 h-4" />
             </div>
             <div>
-              <span className="text-sm font-bold text-white tracking-tight h-full">NexusWA</span>
-              <span className="text-[9px] uppercase font-bold text-[#25D366] bg-[#25D366]/10 px-1.5 py-0.5 rounded ml-2 border border-[#25D366]/25 font-mono">Orchestrator v2.4</span>
+              <span className="text-sm font-bold text-white tracking-tight h-full">HaxtanxWA</span>
+              <span className="text-[9px] uppercase font-bold text-[#25D366] bg-[#25D366]/10 px-1.5 py-0.5 rounded ml-2 border border-[#25D366]/25 font-mono">Loader v2.4</span>
             </div>
           </div>
 
@@ -180,7 +180,7 @@ export default function App() {
               WhatsApp Bot Profiles Dashboard
             </h1>
             <p className="text-xs text-gray-400 max-w-2xl leading-relaxed mb-6 font-sans">
-              Create, provision, and authenticate micro-bot targets dynamically. Every instance operates standard Keep-Alive Warm polling loops and custom E2E key mappings inside Supabase database automatically.
+              Create Haxtanx Server Loader Profile and Link with whatsapp Through Pair code & Scan QR & Manage Bot both from whatsapp and Bot Dashboard
             </p>
             <button
               onClick={() => setShowCreateModal(true)}
@@ -261,7 +261,7 @@ export default function App() {
                 <Bot className="w-12 h-12 text-[#262626] animate-pulse mb-3" />
                 <h3 className="text-sm font-bold text-white mb-1">No Bot Configurations Found</h3>
                 <p className="text-xs text-gray-500 max-w-sm mb-4 leading-normal font-sans">
-                  Create your first WhatsApp bot configuration profile file inside database storage to trigger QR scanner sequences.
+                  Create your first Haxtanx WhatsApp bot configuration profile.
                 </p>
                 <button
                   onClick={() => setShowCreateModal(true)}
@@ -290,7 +290,7 @@ export default function App() {
                 🤖 Register Bot Profile
               </h3>
               <p className="text-xs text-gray-500 mb-5 leading-relaxed font-sans">
-                Provide a friendly name for this instance and an optional specific ID target inside database collections.
+                Enter any Name for bot profile an optional specific ID target inside.
               </p>
 
               <form onSubmit={handleCreateSession} className="space-y-4">
@@ -350,9 +350,9 @@ export default function App() {
       {/* Persistent global footer */}
       <footer className="py-6 mt-16 bg-[#0A0A0A] border-t border-[#262626] text-center text-xs text-gray-500 font-mono">
         <div className="flex justify-center items-center gap-1.5 mb-1 text-slate-400 select-none">
-          <ShieldCheck className="w-3.5 h-3.5 text-[#25D366]" /> Multi-Tenant E2E Database Authentication System
+          <ShieldCheck className="w-3.5 h-3.5 text-[#25D366]" /> A lightweight Server Loader bot for whatsapp 
         </div>
-        Powered by @whiskeysockets/baileys WebSocket connection E2E engine.
+        Powered by Daddy Hamza .
       </footer>
 
     </div>
