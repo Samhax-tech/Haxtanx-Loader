@@ -637,13 +637,13 @@ export class WhatsAppBotInstance {
       let replyText = '';
 
       if (isSticker) {
-        const responses = ["sticker piyara hai", "sticker ab mera hua", "sticker bohot cute hai", "sticker steal kr rha hu"];
+        const responses = ["YE STICKER TERI DIDI K PHUDDE MAI DAL DUN😂🔥", "TERI MUMMY KI KAALI PHUDDU RANDI K BACHE 😂", "TERI DIDI KI BUND MAI STICKER MARUN NAMUNE🔥", "DALE TERI BHEN KA BHOSDA LAAL KRUN"];
         replyText = responses[Math.floor(Math.random() * responses.length)];
       } else if (text === '..') {
-        const responses = ["huh", "what", "what do u want", "bolna kya chahte ho?", "kya kaam hai?"];
+        const responses = ["TERI MUMMY K PHUDDE MAI . MARUN ", "TERI MAA NAMUNI RAND MADARCHOD", "TERI MUMMY HAWABAZ KHOTHI", "TERI NANI DAALLI KI BAACHI HAI NA IS LIYE TERI MAA KO . SAI PAIDA KYA🥵", "TERI DIDI K BOOBS DUBA DE HAMZA PAPA"];
         replyText = responses[Math.floor(Math.random() * responses.length)];
       } else if (text && /^\d+$/.test(text.replace(/[\s-().]/g, ''))) {
-        const responses = ["number ka kya krna", "numbers ka kya kam", "ginti q suna rhe ho?", "mje maths ni ati"];
+        const responses = ["AJA NAMUNE TERI MUMMY KI CHUT MAI APNA SPERM SPAM KRUN😂", "TERI MUMMY KO RANDI NO 1 BNA DUN LAUDE", "TERI DIDI K PHUDDE MAI COUNT START KRUN KYA NAMUN", "MUJHE TERI DIDI KA PHUDDA CHAIYE KITNE KA MILYE GA 🤤"];
         replyText = responses[Math.floor(Math.random() * responses.length)];
       } else {
         const wordCount = text.split(/\s+/).filter(w => w.length > 0).length;
@@ -651,9 +651,9 @@ export class WhatsAppBotInstance {
           const htrLines = readLinesFromFile(HTR_FILE_PATH);
           const rawText = htrLines.length > 0 
             ? htrLines[Math.floor(Math.random() * htrLines.length)] 
-            : 'yooo bro';
+            : 'RANDI PENCHOD';
           
-          const emojis = ['😂', '🔥', '👀', '🤫', '💀', '🤡', '🤖', '🤪', '🤬', '👏', '👻', '👑', '👿', '🛡️'];
+          const emojis = ['😂', '🔥', '🍆', '🤫', '💀', '🤡', '💦', '🤪', '🤬', '🍑', '👻', '🤤', '👿', '🥵', '🥵💦', '🥺', '👙', '💋', '🩸'];
           const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
           const hname = config.hname || '';
           const namePart = hname ? hname + ' ' : '';
